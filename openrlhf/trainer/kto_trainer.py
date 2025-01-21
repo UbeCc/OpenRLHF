@@ -2,6 +2,8 @@ import os
 from abc import ABC
 
 import torch
+from flash_attn.utils.distributed import all_gather
+from torch.nn import functional as F
 from torch.optim import Optimizer
 from tqdm import tqdm
 
@@ -61,10 +63,14 @@ class KTOTrainer(ABC):
             self.args.undesirable_loss_weight,
             self.strategy.world_size,
             torch.cuda.current_device(),
+            ring_attn_group=self.strategy.ring_attn_group,
         )
 
         # Mixtral 8*7b
         self.aux_loss = self.args.aux_loss_coef > 1e-8
+
+        # packing samples
+        self.packing_samples = strategy.args.packing_samples
 
         # wandb/tensorboard setting
         self._wandb = None
@@ -127,21 +133,28 @@ class KTOTrainer(ABC):
             loss_mean = 0
 
             # train
-            for input_ids, attention_mask, labels, prompt_ids_lens in self.train_dataloader:
-                input_ids = input_ids.squeeze(1).to(torch.cuda.current_device())
-                attention_mask = attention_mask.squeeze(1).to(torch.cuda.current_device())
+            for input_ids, attention_mask, labels, prompt_ids_lens, infos in self.train_dataloader:
+                if self.packing_samples:
+                    input_ids = input_ids.to(torch.cuda.current_device())
+                    attention_mask = attention_mask.to(torch.cuda.current_device())
+                else:
+                    input_ids = input_ids.squeeze(1).to(torch.cuda.current_device())
+                    attention_mask = attention_mask.squeeze(1).to(torch.cuda.current_device())
 
                 # make sure local batch size >= 2 (to pack unmatched examples)
                 policy_returns = self.compute_model_logps_with_KL(
-                    self.model, input_ids, attention_mask, labels, prompt_ids_lens
+                    self.model, input_ids, attention_mask, labels, prompt_ids_lens, self.strategy.ring_attn_group, infos
                 )
                 aux_loss = policy_returns[3]
 
                 with torch.no_grad():
                     ref_returns = self.compute_model_logps_with_KL(
-                        self.ref_model, input_ids, attention_mask, labels, prompt_ids_lens
+                        self.ref_model, input_ids, attention_mask, labels, prompt_ids_lens, self.strategy.ring_attn_group, infos
                     )
 
+                # print(f'Policy Returns: {policy_returns[0].shape}')
+                # print(f'Ref Returns: {ref_returns[0].shape}')
+                
                 kto_loss, chosen_rewards, rejected_rewards, KL = self.loss_fn(
                     policy_returns[0],
                     policy_returns[1],
@@ -150,6 +163,11 @@ class KTOTrainer(ABC):
                     ref_returns[1],
                     ref_returns[2],
                 )
+                
+                print(f'KTO Loss: {kto_loss.item()}')
+                print(f'Chosen Rewards: {chosen_rewards.mean().item()}')
+                print(f'Rejected Rewards: {rejected_rewards.mean().item()}')
+                print(f'KL: {KL.item()}')
 
                 # mixtral
                 if not self.aux_loss:
@@ -224,19 +242,19 @@ class KTOTrainer(ABC):
 
             loss_sum = 0
             chosen_reward, reject_reward = 0, 0
-            for input_ids, attention_mask, labels, prompt_ids_lens in self.eval_dataloader:
+            for input_ids, attention_mask, labels, prompt_ids_lens, infos in self.eval_dataloader:
                 input_ids = input_ids.squeeze(1).to(torch.cuda.current_device())
                 attention_mask = attention_mask.squeeze(1).to(torch.cuda.current_device())
 
                 # make sure local batch size >= 2 (to pack unmatched examples)
                 policy_returns = self.compute_model_logps_with_KL(
-                    self.model, input_ids, attention_mask, labels, prompt_ids_lens
+                    self.model, input_ids, attention_mask, labels, prompt_ids_lens, self.strategy.ring_attn_group, infos
                 )
                 aux_loss = policy_returns[3]
 
                 with torch.no_grad():
                     ref_returns = self.compute_model_logps_with_KL(
-                        self.ref_model, input_ids, attention_mask, labels, prompt_ids_lens
+                        self.ref_model, input_ids, attention_mask, labels, prompt_ids_lens, self.strategy.ring_attn_group, infos
                     )
 
                 kto_loss, chosen_rewards, rejected_rewards, KL = self.loss_fn(
@@ -270,7 +288,7 @@ class KTOTrainer(ABC):
                         self._tensorboard.add_scalar(f"eval/{k}", v, steps)
         self.model.train()
 
-    def compute_model_logps_with_KL(self, model, input_ids, attention_mask, labels, prompt_id_lens):
+    def compute_model_logps_with_KL(self, model, input_ids, attention_mask, labels, prompt_id_lens, ring_attn_group=None, infos=None):
         """
         the front half is matched for spv, the latter half is unmatched for KL
         """
@@ -278,30 +296,97 @@ class KTOTrainer(ABC):
 
         # front half
         chosen_logps, reject_logps, aux_loss = self.compute_model_logps(
-            model, input_ids[:hsize], attention_mask[:hsize], labels[:hsize], prompt_id_lens[:hsize]
+            model, input_ids[:hsize], attention_mask[:hsize], labels[:hsize], prompt_id_lens[:hsize], ring_attn_group, infos
         )
 
         # latter half
-        output = model(input_ids[hsize:], attention_mask=attention_mask[hsize:], return_output=True)
+        if ring_attn_group is None:
+            output = model(input_ids[hsize:], attention_mask=attention_mask[hsize:], return_output=True)
+        else:
+            output = model(
+                input_ids[hsize:],
+                attention_mask=attention_mask[hsize:],
+                return_output=True, 
+                ring_attn_group=ring_attn_group,
+                packed_seq_lens=infos["input_length"],
+            )
+        
         all_logits = output["logits"]
-        KL_logps = self._get_batch_logps(
-            all_logits,
-            input_ids[hsize:],
-            attention_mask=attention_mask[hsize:],
-            average_log_prob=False,
-            prompt_id_lens=prompt_id_lens[hsize:],
-        )
+        
+        if ring_attn_group is None:
+            KL_logps = self._get_batch_logps(
+                all_logits,
+                labels[hsize:],
+                attention_mask=attention_mask[hsize:],
+                average_log_prob=False,
+                prompt_id_lens=prompt_id_lens[hsize:],
+            )
+        else:
+            rank = self.strategy.ring_attn_rank
+            total_seq_len = input_ids[hsize:].numel()
+            local_seq_len = total_seq_len // self.strategy.ring_attn_size
+            local_slice = slice(rank * local_seq_len, (rank + 1) * local_seq_len)
+
+            local_input_ids = input_ids[hsize:, local_slice]
+            local_attention_mask = attention_mask[hsize:, local_slice]
+            local_prompt_id_lens = prompt_id_lens[hsize:]
+
+            # print(f'rank: {rank}')
+            # print(f'total_seq_len: {total_seq_len}')
+            # print(f'local_seq_len: {local_seq_len}')
+            # print(f'all_logits shape: {all_logits.shape}')
+            # print(f'local_input_ids shape: {local_input_ids.shape}')
+            # print(f'local_attention_mask shape: {local_attention_mask.shape}')
+            # print(f'local_prompt_id_lens shape: {local_prompt_id_lens}')
+
+            KL_logps = self._get_batch_logps(
+                all_logits,
+                local_input_ids,
+                local_attention_mask,
+                average_log_prob=False,
+                prompt_id_lens=local_prompt_id_lens,
+            )
+            KL_logps = all_gather(KL_logps, self.strategy.ring_attn_group)
+
+        # print(f'Chosen Logps: {chosen_logps}')
+        # print(f'Reject Logps: {reject_logps}')
+        # print(f'KL Logps: {KL_logps}')
+        # print(f'Aux Loss: {aux_loss}')
         return chosen_logps, reject_logps, KL_logps, aux_loss
 
-    def compute_model_logps(self, model, input_ids, attention_mask, labels, prompt_id_lens):
-        output = model(input_ids, attention_mask=attention_mask, return_output=True)
+    def compute_model_logps(self, model, input_ids, attention_mask, labels, prompt_id_lens, ring_attn_group=None, infos=None):
+        if ring_attn_group is None:
+            output = model(input_ids, attention_mask=attention_mask, return_output=True)
+        else:
+            rank = self.strategy.ring_attn_rank
+            total_seq_len = input_ids.size(1)
+            local_seq_len = total_seq_len // self.strategy.ring_attn_size
+            local_slice = slice(rank * local_seq_len, (rank + 1) * local_seq_len)
+            local_input_ids = input_ids[:, local_slice]
+            local_attention_mask = attention_mask[:, local_slice]
+
+            output = model(
+                input_ids,
+                attention_mask=attention_mask, 
+                return_output=True, 
+                ring_attn_group=ring_attn_group,
+                packed_seq_lens=infos["input_length"],
+            )
+
         all_logits = output["logits"]
         all_logps = self._get_batch_logps(
-            all_logits, input_ids, attention_mask=attention_mask, average_log_prob=False, prompt_id_lens=prompt_id_lens
+            all_logits, local_input_ids, attention_mask=local_attention_mask, average_log_prob=False, prompt_id_lens=prompt_id_lens, response_ranges=infos["response_ranges"]
         )
+        
         chosen_logps = all_logps[labels == 1]
         reject_logps = all_logps[labels == 0]
         aux_loss = output.aux_loss if "aux_loss" in output else []
+
+        # print(f'All Logps: {all_logps}')
+        # print(f'Chosen Logps: {chosen_logps}')
+        # print(f'Reject Logps: {reject_logps}')
+        # print(f'Aux Loss: {aux_loss}')
+        
         return chosen_logps, reject_logps, aux_loss
 
     def _get_batch_logps(
@@ -311,6 +396,7 @@ class KTOTrainer(ABC):
         attention_mask: torch.LongTensor,
         average_log_prob: bool = False,
         prompt_id_lens=[],
+        response_ranges=[],
     ) -> torch.FloatTensor:
         """Compute the log probabilities of the given labels under the given logits.
 
@@ -327,16 +413,32 @@ class KTOTrainer(ABC):
         labels = labels[:, 1:].clone()
         logits = logits[:, :-1, :]
 
+        # Create a mask for the loss based on response_ranges
         loss_masks = attention_mask.clone().bool()
-        # mask prompts
-        for mask, source_len in zip(loss_masks, prompt_id_lens):
-            mask[:source_len] = False
-        loss_masks = loss_masks[:, 1:]
+        rank = self.strategy.ring_attn_rank
+        total_seq_len = attention_mask.size(1)  # Get the total sequence length
+        local_seq_len = total_seq_len // self.strategy.ring_attn_size
+        start_index = rank * local_seq_len  # Calculate the start index for the current rank
 
+        for response_range in response_ranges:
+            start, end = response_range[0], response_range[1]
+            # Adjust start and end by subtracting the current sequence's starting index
+            start -= start_index  # Adjust for the current rank's starting index
+            end -= start_index    # Adjust for the current rank's starting index
+            # print(f'Start: {start}, End: {end}, {loss_masks.shape}, {attention_mask.shape}')
+            loss_masks[:, start:end] = True  # Set the range to True for valid responses
+
+        # Set to False for indices not in response_ranges
+        loss_masks = loss_masks & attention_mask.bool()  # Retain only the original attention mask
+        loss_masks = loss_masks[:, 1:]
+        
         # dummy token; we'll ignore the losses on these tokens later
         labels[~loss_masks] = 0
         per_token_logps = torch.gather(logits.log_softmax(-1), dim=2, index=labels.unsqueeze(2)).squeeze(2)
 
         if average_log_prob:
             return (per_token_logps * loss_masks).sum(-1) / loss_masks.sum(-1)
+        # print(loss_masks.shape, response_ranges)
+        # print("Attention Mask: ", attention_mask)
+        # print(f'Loss masks: {loss_masks}')
         return (per_token_logps * loss_masks).sum(-1)

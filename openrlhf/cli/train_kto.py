@@ -28,6 +28,7 @@ def train(args):
         target_modules=args.target_modules,
         lora_dropout=args.lora_dropout,
         ds_config=strategy.get_ds_train_config(is_actor=True),
+        packing_samples=args.packing_samples,
     )
 
     # configure tokenizer
@@ -41,6 +42,7 @@ def train(args):
         bf16=args.bf16,
         load_in_4bit=args.load_in_4bit,
         ds_config=strategy.get_ds_eval_config(offload=args.ref_offload),
+        packing_samples=args.packing_samples,
     )
     if args.ref_offload:
         ref_model._offload = True
@@ -70,20 +72,36 @@ def train(args):
     eval_data = eval_data.select(range(min(args.max_samples, len(eval_data))))
 
     train_dataset = UnpairedPreferenceDataset(
-        train_data, tokenizer, args.max_len, strategy, input_template=args.input_template
+        train_data,
+        tokenizer,
+        args.max_len,
+        strategy,
+        input_template=args.input_template,
+        multiple_of=args.ring_attn_size,
+        multiturn=args.multiturn,
     )
     eval_dataset = UnpairedPreferenceDataset(
-        eval_data, tokenizer, args.max_len, strategy, input_template=args.input_template
+        eval_data,
+        tokenizer,
+        args.max_len,
+        strategy,
+        input_template=args.input_template,
+        multiple_of=args.ring_attn_size,
+        multiturn=args.multiturn,
     )
     train_dataloader = strategy.setup_dataloader(
         train_dataset,
         args.micro_train_batch_size,
         True,
         True,
-        train_dataset.collate_fn,
+        train_dataset.packing_collate_fn if args.packing_samples else train_dataset.collate_fn,
     )
     eval_dataloader = strategy.setup_dataloader(
-        eval_dataset, args.micro_train_batch_size, True, False, eval_dataset.collate_fn
+        eval_dataset, 
+        args.micro_train_batch_size, 
+        True, 
+        False, 
+        eval_dataset.packing_collate_fn if args.packing_samples else eval_dataset.collate_fn,
     )
 
     # scheduler
@@ -180,11 +198,26 @@ if __name__ == "__main__":
         "--undesirable_loss_weight", type=float, default=1.0, help="Loss weight for undesirable samples"
     )
 
+    # ring-attention
+    parser.add_argument("--ring_attn_size", type=int, default=1, help="Ring attention group size")
+    parser.add_argument(
+        "--ring_head_stride",
+        type=int,
+        default=1,
+        help="the number of heads to do ring attention each time. "
+        "It should be a divisor of the number of heads. "
+        "A larger value may results in faster training but will consume more memory.",
+    )
+
+    # packing KTO samples without CrossAttention
+    parser.add_argument("--packing_samples", action="store_true", default=False)
+
     # Custom dataset
     parser.add_argument("--dataset", type=str, default="Dahoas/full-hh-rlhf")
     parser.add_argument("--dataset_probs", type=str, default="1.0", help="sampling probs for datasets")
     parser.add_argument("--train_split", type=str, default="train", help="train split of the HF dataset")
     parser.add_argument("--eval_split", type=str, default="test", help="test split of the dataset")
+    parser.add_argument("--multiturn", action="store_true", default=False, help="Use compacted multiturn dataset")
 
     parser.add_argument("--input_key", type=str, default="input", help="JSON dataset key")
     parser.add_argument("--output_key", type=str, default=None, help="JSON dataset key")

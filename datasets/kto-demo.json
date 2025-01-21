@@ -1,0 +1,666 @@
+[
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 1
+    },
+    {
+        "input": [{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."},{"role": "user", "content": "User asks for the weather"}, {"role": "assistant", "content": "Today's weather is sunny with a temperature of 25°C."}],
+        "reward": 0
+    }
+]

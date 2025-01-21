@@ -214,7 +214,7 @@ class KTOLoss(nn.Module):
     """
 
     def __init__(
-        self, beta: float, desirable_weight: float, undesirable_weight: float, world_size: int, device: torch.device
+        self, beta: float, desirable_weight: float, undesirable_weight: float, world_size: int, device: torch.device, ring_attn_group=None
     ) -> None:
         super().__init__()
         self.beta = beta
@@ -222,6 +222,8 @@ class KTOLoss(nn.Module):
         self.device = device
         self.desirable_weight = desirable_weight
         self.undesirable_weight = undesirable_weight
+        self.ring_attn_group = ring_attn_group
+        self.ring_attn_world_size = dist.get_world_size(self.ring_attn_group)        
 
     def forward(
         self,
@@ -232,27 +234,54 @@ class KTOLoss(nn.Module):
         reference_rejected_logps: torch.FloatTensor,
         reference_KL_logps: torch.FloatTensor,
     ) -> Tuple[torch.FloatTensor, torch.FloatTensor, torch.FloatTensor]:
+        # Calculate KL divergence
         KL = (policy_KL_logps - reference_KL_logps).mean().detach()
-        # all_reduce sums up the KL estimates across all devices (gradient will also be scaled by world size)
-        dist.all_reduce(KL, op=dist.ReduceOp.SUM)
-        # take average (will also scale gradients appropriately)
-        KL = (KL / self.world_size).clamp(min=0)
-
+        
+        # Calculate log ratios
+        chosen_logratios = None
+        rejected_logratios = None
+        
         if policy_chosen_logps.shape[0] != 0:
             chosen_logratios = policy_chosen_logps - reference_chosen_logps
+        if policy_rejected_logps.shape[0] != 0:
+            rejected_logratios = policy_rejected_logps - reference_rejected_logps
+
+        # RingAttention - reduce all terms
+        if self.ring_attn_group is not None:
+            dist.all_reduce(KL, op=dist.ReduceOp.SUM, group=self.ring_attn_group)
+            KL = (KL / self.ring_attn_world_size).clamp(min=0)
+
+            if chosen_logratios is not None:
+                dist.all_reduce(chosen_logratios, op=dist.ReduceOp.SUM, group=self.ring_attn_group)
+                chosen_logratios = chosen_logratios / self.ring_attn_world_size
+
+            if rejected_logratios is not None:
+                dist.all_reduce(rejected_logratios, op=dist.ReduceOp.SUM, group=self.ring_attn_group)
+                rejected_logratios = rejected_logratios / self.ring_attn_world_size
+        else:
+            dist.all_reduce(KL, op=dist.ReduceOp.SUM)
+            KL = (KL / self.world_size).clamp(min=0)
+
+            if chosen_logratios is not None:
+                dist.all_reduce(chosen_logratios, op=dist.ReduceOp.SUM)
+                chosen_logratios = chosen_logratios / self.world_size
+
+            if rejected_logratios is not None:
+                dist.all_reduce(rejected_logratios, op=dist.ReduceOp.SUM)
+                rejected_logratios = rejected_logratios / self.world_size
+
+        # Calculate losses using reduced values
+        if policy_chosen_logps.shape[0] != 0:
             chosen_losses = 1 - F.sigmoid(self.beta * (chosen_logratios - KL))
             chosen_rewards = self.beta * chosen_logratios.detach()
         else:
-            # important to cast to policy_dtype; otherwise error will occur during all_gather
             chosen_losses = torch.Tensor([]).to(policy_rejected_logps.dtype).to(self.device)
             chosen_rewards = torch.Tensor([]).to(policy_rejected_logps.dtype).to(self.device)
 
         if policy_rejected_logps.shape[0] != 0:
-            rejected_logratios = policy_rejected_logps - reference_rejected_logps
             rejected_losses = 1 - F.sigmoid(self.beta * (KL - rejected_logratios))
             rejected_rewards = self.beta * rejected_logratios.detach()
         else:
-            # important to cast to policy_dtype; otherwise error will occur during all_gather
             rejected_losses = torch.Tensor([]).to(policy_chosen_logps.dtype).to(self.device)
             rejected_rewards = torch.Tensor([]).to(policy_chosen_logps.dtype).to(self.device)
 
@@ -260,7 +289,6 @@ class KTOLoss(nn.Module):
             (self.desirable_weight * chosen_losses, self.undesirable_weight * rejected_losses), 0
         ).mean()
         return losses, chosen_rewards, rejected_rewards, KL
-
 
 # Adapted from https://github.com/microsoft/LMOps/blob/main/minillm/finetune.py#L166
 class KDLoss(nn.Module):
