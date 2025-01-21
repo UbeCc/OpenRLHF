@@ -78,6 +78,7 @@ def train(args):
         input_template=args.input_template,
         is_dpo=True,
         multiple_of=args.ring_attn_size,
+        multiturn=args.multiturn,
     )
     eval_dataset = RewardDataset(
         eval_data,
@@ -87,6 +88,7 @@ def train(args):
         input_template=args.input_template,
         is_dpo=True,
         multiple_of=args.ring_attn_size,
+        multiturn=args.multiturn,
     )
 
     # prepare dataloader
@@ -224,6 +226,7 @@ if __name__ == "__main__":
     parser.add_argument("--dataset_probs", type=str, default="1.0", help="sampling probs for datasets")
     parser.add_argument("--train_split", type=str, default="train", help="train split of the HF dataset")
     parser.add_argument("--eval_split", type=str, default="test", help="test split of the dataset")
+    parser.add_argument("--multiturn", action="store_true", default=False, help="Use compacted multiturn dataset")
 
     parser.add_argument("--prompt_key", type=str, default=None)
     parser.add_argument("--chosen_key", type=str, default="chosen")

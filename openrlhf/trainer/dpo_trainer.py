@@ -132,33 +132,59 @@ class DPOTrainer(ABC):
             self.ref_model.eval()
             acc_mean = 0
             loss_mean = 0
-            # train
             for data in self.train_dataloader:
                 if not self.packing_samples:
-                    chosen_ids, c_mask, reject_ids, r_mask, prompt_id_lens = data
+                    chosen_ids, c_mask, reject_ids, r_mask, prompt_id_lens, pakced_seq_lens, infos = data
                     chosen_ids = chosen_ids.squeeze(1).to(torch.cuda.current_device())
                     c_mask = c_mask.squeeze(1).to(torch.cuda.current_device())
                     reject_ids = reject_ids.squeeze(1).to(torch.cuda.current_device())
                     r_mask = r_mask.squeeze(1).to(torch.cuda.current_device())
 
+                    # 合并 chosen_ranges 和 rejected_ranges
+                    combined_ranges = []
+                    for chosen_range_list in infos["chosen_ranges"]:
+                        for chosen_range in chosen_range_list:
+                            combined_ranges.append(chosen_range)
+
+                    # Adjust rejected_ranges based on the last chosen_range
+                    last_chosen_end = combined_ranges[-1][1] if combined_ranges else 0
+                    for rejected_range_list in infos["rejected_ranges"]:
+                        for rejected_range in rejected_range_list:
+                            adjusted_range = [rejected_range[0] + last_chosen_end, rejected_range[1] + last_chosen_end]
+                            combined_ranges.append(adjusted_range)
+
                     chosen_logps, rejected_logps, aux_loss, nll_loss = self.concatenated_forward(
-                        self.model, chosen_ids, c_mask, reject_ids, r_mask, prompt_id_lens
+                        self.model, chosen_ids, c_mask, reject_ids, r_mask, prompt_id_lens, combined_ranges
                     )
                     with torch.no_grad():
                         reference_chosen_logps, reference_rejected_logps, _, _ = self.concatenated_forward(
                             self.ref_model, chosen_ids, c_mask, reject_ids, r_mask, prompt_id_lens
                         )
                 else:
-                    packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens = data
+                    packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens, infos = data
                     packed_input_ids, packed_attention_masks = packed_input_ids.to(
                         torch.cuda.current_device()
                     ), packed_attention_masks.to(torch.cuda.current_device())
+                    
+                    # 合并 chosen_ranges 和 rejected_ranges
+                    combined_ranges = []
+                    for chosen_range_list in infos["chosen_ranges"]:
+                        for chosen_range in chosen_range_list:
+                            combined_ranges.append(chosen_range)
+
+                    # Adjust rejected_ranges based on the last chosen_range
+                    last_chosen_end = combined_ranges[-1][1] if combined_ranges else 0
+                    for rejected_range_list in infos["rejected_ranges"]:
+                        for rejected_range in rejected_range_list:
+                            adjusted_range = [rejected_range[0] + last_chosen_end, rejected_range[1] + last_chosen_end]
+                            combined_ranges.append(adjusted_range)
+
                     chosen_logps, rejected_logps, aux_loss, nll_loss = self.packed_samples_forward(
-                        self.model, packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens
+                        self.model, packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens, combined_ranges
                     )
                     with torch.no_grad():
                         reference_chosen_logps, reference_rejected_logps, _, _ = self.packed_samples_forward(
-                            self.ref_model, packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens
+                            self.ref_model, packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens, combined_ranges
                         )
 
                 # loss function
@@ -299,7 +325,7 @@ class DPOTrainer(ABC):
                         self._tensorboard.add_scalar(f"eval/{k}", v, steps)
         self.model.train()  # reset model state
 
-    def concatenated_forward(self, model, chosen_ids, c_mask, reject_ids, r_mask, prompt_id_lens):
+    def concatenated_forward(self, model, chosen_ids, c_mask, reject_ids, r_mask, prompt_id_lens, info=None):
         """Run the given model on the given batch of inputs, concatenating the chosen and rejected inputs together.
 
         We do this to avoid doing two forward passes, because it's faster for FSDP.
@@ -356,6 +382,7 @@ class DPOTrainer(ABC):
         attention_mask,
         prompt_id_lens,
         average_log_prob: bool = False,
+        response_ranges=[],
     ) -> torch.FloatTensor:
         """Compute the log probabilities of the given labels under the given logits.
 
@@ -374,9 +401,21 @@ class DPOTrainer(ABC):
         logits = logits[:, :-1, :]
 
         loss_masks = attention_mask.clone().bool()
-        # mask prompts
-        for mask, source_len in zip(loss_masks, prompt_id_lens):
-            mask[:source_len] = False
+        rank = self.strategy.ring_attn_rank
+        total_seq_len = attention_mask.size(1)  # Get the total sequence length
+        local_seq_len = total_seq_len // self.strategy.ring_attn_size
+        start_index = rank * local_seq_len  # Calculate the start index for the current rank
+
+        for response_range in response_ranges:
+            start, end = response_range[0], response_range[1]
+            # Adjust start and end by subtracting the current sequence's starting index
+            start -= start_index  # Adjust for the current rank's starting index
+            end -= start_index    # Adjust for the current rank's starting index
+            # print(f'Start: {start}, End: {end}, {loss_masks.shape}, {attention_mask.shape}')
+            loss_masks[:, start:end] = True  # Set the range to True for valid responses
+
+        # Set to False for indices not in response_ranges
+        loss_masks = loss_masks & attention_mask.bool()  # Retain only the original attention mask
         loss_masks = loss_masks[:, 1:]
 
         # dummy token; we'll ignore the losses on these tokens later
@@ -387,7 +426,7 @@ class DPOTrainer(ABC):
         logprobs_means = (per_token_logps * loss_masks).sum(-1) / loss_masks.sum(-1)
         return logprobs_sums, logprobs_means
 
-    def packed_samples_forward(self, model, packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens):
+    def packed_samples_forward(self, model, packed_input_ids, packed_attention_masks, packed_seq_lens, prompt_id_lens, info=None):
         output = model(
             packed_input_ids,
             attention_mask=packed_attention_masks,

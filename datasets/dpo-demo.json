@@ -1,0 +1,646 @@
+[
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    },
+    {
+        "chosen": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "I'm sorry, I can't do that"}],
+        "rejected": [{"role": "user", "content": "I want to see the data of the last 3 months"}, {"role": "assistant", "content": "Hihihi"}]
+    }
+]

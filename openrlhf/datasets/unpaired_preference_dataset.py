@@ -236,7 +236,7 @@ class UnpairedPreferenceDataset(Dataset):
                     attention_mask = F.pad(attention_mask, (0, padding_len), value=0)
 
             packed_input_ids.append(input_ids.flatten())
-            
+
             attention_mask_flat = torch.full_like(input_ids.flatten(), index)
             if padding_len > 0:
                 attention_mask_flat[-padding_len:] = 0
@@ -264,7 +264,7 @@ class UnpairedPreferenceDataset(Dataset):
                 if padding_len > 0:
                     input_ids = F.pad(input_ids, (0, padding_len), value=self.tokenizer.pad_token_id)
                     attention_mask = F.pad(attention_mask, (0, padding_len), value=0)
-
+            # input_ids: seqlen
             packed_input_ids.append(input_ids.flatten())
 
             attention_mask_flat = torch.full_like(input_ids.flatten(), index)
@@ -281,7 +281,7 @@ class UnpairedPreferenceDataset(Dataset):
                     info["response_ranges"][i][1] += infos["response_ranges"][-1][-1][1]
             infos["response_ranges"].append(info["response_ranges"])
             index += 1
-
+        # packed_input_ids: [micro_batch_size, seqlen]
         infos["response_ranges"] = [item for sublist in infos["response_ranges"] for item in sublist]
         packed_input_ids = torch.stack(packed_input_ids, dim=0)
         packed_attention_masks = torch.stack(packed_attention_masks, dim=0)
