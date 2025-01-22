@@ -1,4 +1,4 @@
-# drop prompt
+from copy import deepcopy
 from typing import Callable
 
 import torch
@@ -197,7 +197,15 @@ class RewardDataset(Dataset):
             "chosen_ranges": chosen_ranges,
             "rejected_ranges": rejected_ranges,
         }
-            
+
+        # print("Chosen Token Input IDs to Tokens:")
+        # for id in chosen_token["input_ids"][0]:
+        #     print(f"ID: {id}, Token: {self.tokenizer.decode([id], skip_special_tokens=True)}")
+        # print("Reject Token Input IDs to Tokens:")
+        # for id in reject_token["input_ids"][0]:
+        #     print(f"ID: {id}, Token: {self.tokenizer.decode([id], skip_special_tokens=True)}")
+        # print("Info:", info)
+
         return (
             chosen_token["input_ids"],
             chosen_token["attention_mask"],
@@ -242,12 +250,11 @@ class RewardDataset(Dataset):
         prompt_ids_lens = []
         index = 1
         for chosen_id, chosen_mask, reject_id, rejects_mask, info in item_list:
-            print("INFO:", info)
+            prompt_ids_lens.append(info["extra"])
+
             chosen_ids.append(chosen_id.flatten())
             chosen_att_masks.append(torch.full_like(chosen_id.flatten(), index))
             chosen_seq_lens.append(len(chosen_id.flatten()))
-            infos["chosen_ranges"].append(info["chosen_ranges"])
-            prompt_ids_lens.append(info["extra"])
             if len(infos["chosen_ranges"]) >= 1:
                 for i in range(len(info["chosen_ranges"])):
                     info["chosen_ranges"][i][0] += infos["chosen_ranges"][-1][-1][1] # end_index of the last response of the last item
@@ -257,8 +264,6 @@ class RewardDataset(Dataset):
             rejected_ids.append(reject_id.flatten())
             rejected_att_masks.append(torch.full_like(reject_id.flatten(), index + len(item_list)))
             rejected_seq_lens.append(len(reject_id.flatten()))
-            infos["rejected_ranges"].append(info["rejected_ranges"])
-
             if len(infos["rejected_ranges"]) >= 1:
                 for i in range(len(info["rejected_ranges"])):
                     info["rejected_ranges"][i][0] += infos["rejected_ranges"][-1][-1][1] # end_index of the last response of the last item
